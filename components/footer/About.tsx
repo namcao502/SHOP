@@ -2,7 +2,7 @@ import Link from 'next/link';
 import logoImg from '../../assets/logo.svg';
 
 export default function FooterAbout({companyTitle}: {companyTitle?: string}) {
-	const title = companyTitle || 'Your Company LLC.';
+	const title = companyTitle || 'Fresh C';
 	return <>
         <div className='page-footer__logo'>
 					<Link href='/'>
@@ -14,8 +14,7 @@ export default function FooterAbout({companyTitle}: {companyTitle?: string}) {
         </div>
         <div className='page-footer__disclaimer'>
             <p className='text-muted small'>
-                This website and its contents are provided "as is" and "as available" without any warranty or representations of any kind, whether express or implied.
-                Price and availability information is subject to change without notice.
+            Success isn’t about how much money you make. It’s about the difference you make in people’s lives.
             </p>
         </div>
     </>;

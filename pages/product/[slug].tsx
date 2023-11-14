@@ -58,7 +58,7 @@ export default function ProductPage({data: {product, categoryParents, mainMenu, 
 			footerMenu={footerMenu}
 			mainMenu={mainMenu}
 			metaData={getProductMetaData(product)}
-			title={product.seo.title}
+			title={"Product Detail"}
 			basicSettings={basicSettings}
 		>
 			<div className={'container'}>
@@ -81,7 +81,7 @@ export default function ProductPage({data: {product, categoryParents, mainMenu, 
 								size={product.props.size}
 							/>
 							<hr className='product-page__hr' />
-							<ProductShipping />
+							{/* <ProductShipping /> */}
 						</div>
 					</div>
 					{product.text.description && <article itemProp='description'
@@ -89,16 +89,16 @@ export default function ProductPage({data: {product, categoryParents, mainMenu, 
 						dangerouslySetInnerHTML={{__html: product?.text.description}} />}
 					<MetaSchemaOrg product={product} parents={resolvedParents} />
 				</div>
-				<ProductsSliderByQuery
+				{/* <ProductsSliderByQuery
 					query={similarQuery as IGetProductsParams}
 					title='Similar products'
 					wrapperClassName='page-block'
-				/>
-				<ProductsSliderByQuery
+				/> */}
+				{/* <ProductsSliderByQuery
 					query={relatedQuery as IGetProductsParams}
 					title='Frequently Bought Together'
 					wrapperClassName='page-block'
-				/>
+				/> */}
 			</div>
 		</MainLayout>
 	);

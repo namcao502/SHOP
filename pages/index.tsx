@@ -9,6 +9,7 @@ import {IMenuItem} from '../@types/components';
 import SwiperSlider from '../components/SwiperSlider';
 import cliffImg from '../assets/cliff_1.jpg';
 import cliff2Img from '../assets/cliff_2.jpg';
+import cliff3Img from '../assets/cliff_3.jpg';
 import CoverTextInCenter from '../components/CoverTextInCenter';
 import bgImg from '../assets/cover-bg.jpeg';
 import bgPortraitImg from '../assets/cover-bg-portrait.jpg';
@@ -20,7 +21,7 @@ export default function IndexPage({products, mainMenu, footerMenu, basicSettings
 		<MainLayout mainMenu={mainMenu} footerMenu={footerMenu} basicSettings={basicSettings}>
 			<div className='container'>
 				<MainPageSlider />
-				<h1 className='page-heading page-heading_h1  page-heading_m-h1'>Boundless store</h1>
+				<h1 className='page-heading page-heading_h1  page-heading_m-h1'>Recommend for you</h1>
 				<ProductsList products={products} query={{}}/>
 				{/* <div className='row'>
 					<nav className='col-lg-3 d-none d-lg-block'>
@@ -48,7 +49,7 @@ export default function IndexPage({products, mainMenu, footerMenu, basicSettings
 				link={'http://google.com'}
 			/> */}
 			<div className='container'>
-				<h2 className='page-heading page-heading_h1  page-heading_m-h1'>Products carousel:</h2>
+				<h2 className='page-heading page-heading_h1  page-heading_m-h1'>Trending</h2>
 				<ProductsSliderByQuery
 					query={{collection: ['main-page'], sort: 'in_collection'}}
 					title={''}
@@ -87,17 +88,26 @@ function MainPageSlider() {
 		{
 			'img': cliffImg.src,
 			'link': '',
-			'caption': 'Three things cannot be long hidden: The Sun, The Moon, and The Truth.',
+			'caption': 'Everyone lives by selling something',
 			'captionPosition': 'center',
 			'useFilling': true,
 			'fillingColor': '#000000',
-			'fillingOpacity': 0.40
+			'fillingOpacity': 0.4
 		},
 		{
 			'img': cliff2Img.src,
 			'link': '',
-			'caption': 'Pray not for easy lives, pray to be stronger men.',
-			'captionPosition': null,
+			'caption': 'What differentiates sellers today is their ability to bring fresh ideas',
+			'captionPosition': 'center',
+			'useFilling': true,
+			'fillingColor': '#000000',
+			'fillingOpacity': 0.4
+		},
+		{
+			'img': cliff3Img.src,
+			'link': '',
+			'caption': "As a brand marketer, I'm a big believer in 'branding the customer experience', not just selling the service",
+			'captionPosition': 'center',
 			'useFilling': true,
 			'fillingColor': '#000000',
 			'fillingOpacity': 0.4
