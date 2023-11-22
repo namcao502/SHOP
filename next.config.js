@@ -8,6 +8,7 @@ if (process.env.BOUNDLESS_MEDIA_SERVER) {
 }
 
 module.exports = {
+	distDir: 'build',
 	images: {
 		domains: imgDomains
 	},
