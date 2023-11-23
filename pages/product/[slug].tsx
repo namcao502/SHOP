@@ -1,5 +1,5 @@
 import {useEffect, useMemo, useState} from 'react';
-import {ICategoryFlatItem, IGetProductsParams, IProductItem} from 'boundless-api-client';
+import {ICategoryFlatItem, IProductItem} from 'boundless-api-client';
 import {GetStaticPaths, GetStaticProps, InferGetStaticPropsType} from 'next';
 import MainLayout from '../../layouts/Main';
 import {apiClient} from '../../lib/api';
@@ -14,9 +14,7 @@ import ProductVariantAndBuy from '../../components/product/VariantAndBuy';
 import ProductCharacteristics from '../../components/product/Characteristics';
 import {makeAllMenus} from '../../lib/menu';
 import {makeBreadCrumbsFromCats} from '../../lib/breadcrumbs';
-import ProductShipping from '../../components/product/Shipping';
 import {IMenuItem} from '../../@types/components';
-import ProductsSliderByQuery from '../../components/ProductsSliderByQuery';
 import {IBasicSettings} from '../../@types/settings';
 
 export default function ProductPage({data: {product, categoryParents, mainMenu, footerMenu, basicSettings}}: InferGetStaticPropsType<typeof getStaticProps>) {

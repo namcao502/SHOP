@@ -380,10 +380,10 @@
     prop-types "^15.8.1"
     react-is "^18.2.0"
 
-"@next/bundle-analyzer@^12.0.10":
-  version "12.0.10"
-  resolved "https://registry.npmjs.org/@next/bundle-analyzer/-/bundle-analyzer-12.0.10.tgz"
-  integrity sha512-POUNU5BAyJUvuMnALBFaxQvS6Rpdk2D7snHV/3Wdv2UkVX5PUPBYZc3KLdMirMQ6jPNbnvB0/lG5/LM15fHtqw==
+"@next/bundle-analyzer@^12.3.4":
+  version "12.3.4"
+  resolved "https://registry.npmjs.org/@next/bundle-analyzer/-/bundle-analyzer-12.3.4.tgz"
+  integrity sha512-eKjgRICzbLTmod0UnJcArFVs5uEAiuZwB6NCf84m+btW7jdylUVoOYf1wi5tA14xk5L9Lho7Prm6/XJ8gxYzfQ==
   dependencies:
     webpack-bundle-analyzer "4.3.0"
 

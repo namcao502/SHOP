@@ -4,15 +4,11 @@ import ProductsList from '../components/ProductsList';
 import MainLayout from '../layouts/Main';
 import {apiClient} from '../lib/api';
 import {makeAllMenus} from '../lib/menu';
-import VerticalMenu from '../components/VerticalMenu';
 import {IMenuItem} from '../@types/components';
 import SwiperSlider from '../components/SwiperSlider';
 import cliffImg from '../assets/cliff_1.jpg';
 import cliff2Img from '../assets/cliff_2.jpg';
 import cliff3Img from '../assets/cliff_3.jpg';
-import CoverTextInCenter from '../components/CoverTextInCenter';
-import bgImg from '../assets/cover-bg.jpeg';
-import bgPortraitImg from '../assets/cover-bg-portrait.jpg';
 import ProductsSliderByQuery from '../components/ProductsSliderByQuery';
 import {IBasicSettings} from '../@types/settings';
 
@@ -23,31 +19,7 @@ export default function IndexPage({products, mainMenu, footerMenu, basicSettings
 				<MainPageSlider />
 				<h1 className='page-heading page-heading_h1  page-heading_m-h1'>Recommend for you</h1>
 				<ProductsList products={products} query={{}}/>
-				{/* <div className='row'>
-					<nav className='col-lg-3 d-none d-lg-block'>
-						{mainMenu && <VerticalMenu menuList={mainMenu} />}
-					</nav>
-					
-				</div> */}
-				{/* <div className='container'>
-					<h2 className='page-heading page-heading_h1  page-heading_m-h1'>Cover example:</h2>
-				</div> */}
 			</div>
-			{/* <CoverTextInCenter
-				showChevronDown
-				img={bgImg.src}
-				imgPortrait={bgPortraitImg.src}
-				content={{
-					intro: 'Intro',
-					head: 'Main header',
-					subHead: 'subheader'
-				}}
-				shadow={{
-					opacity: 0.5,
-					backgroundColor: '#000'
-				}}
-				link={'http://google.com'}
-			/> */}
 			<div className='container'>
 				<h2 className='page-heading page-heading_h1  page-heading_m-h1'>Trending</h2>
 				<ProductsSliderByQuery

@@ -1,4 +1,4 @@
-import dynamic from 'next/dynamic';
+
 import {ReactNode, useEffect} from 'react';
 import Head from 'next/head';
 import Header from '../components/Header';
@@ -7,7 +7,6 @@ import AlertWidget from '../components/Alert';
 import {useAppSelector} from '../hooks/redux';
 import {RootState} from '../redux/store';
 import clsx from 'clsx';
-const AsideMenu = dynamic(() => import('../components/AsideMenu'), {ssr: false});
 import AsideBackdrop from '../components/asideMenu/Backdrop';
 import HorizontalMenu from '../components/HorizontalMenu';
 import CallToOrder from '../components/header/CallToOrder';
@@ -67,7 +66,6 @@ export default function MainLayout({children, title, metaData, mainMenu, footerM
 				<Footer menuList={footerMenu}/>
 				<AsideBackdrop />
 			</div>
-			<AsideMenu menuList={mainMenu}/>
 		</>
 	);
 }

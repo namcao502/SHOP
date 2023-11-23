@@ -1,0 +1,12 @@
+# Next.js source code
+/pages/
+/@types/
+/assets/
+/components/
+/hooks/
+/layouts/
+/lib/
+/node_modules/
+/public/
+/redux/
+/styles/
