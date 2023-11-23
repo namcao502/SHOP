@@ -25,6 +25,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "gcp-build": "",
+    "deploy": "npm run build && gcloud config set project winter-monolith-405012 && gcloud app deploy app.yaml --version=0-1-2 --quiet",
     "lint": "npx eslint --ext .ts --ext .tsx . && npx stylelint ./styles"
   },
   "dependencies": {
@@ -68,7 +70,8 @@
     "sharp": "^0.32.5",
     "swiper": "8",
     "typescript": "^4.5.4",
-    "xmlbuilder": "^15.1.1"
+    "xmlbuilder": "^15.1.1",
+    "yarn": "^1.22.21"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^12.3.4",
