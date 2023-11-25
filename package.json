@@ -26,7 +26,7 @@
     "build": "next build",
     "start": "next start",
     "gcp-build": "",
-    "deploy": "npm run build && gcloud config set project winter-monolith-405012 && gcloud app deploy app.yaml --version=0-1-2 --quiet",
+    "deploy": "gcloud config set project winter-monolith-405012 && gcloud app deploy app.yaml --version=0-1-2 --quiet",
     "lint": "npx eslint --ext .ts --ext .tsx . && npx stylelint ./styles"
   },
   "dependencies": {
